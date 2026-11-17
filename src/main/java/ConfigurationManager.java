@@ -58,6 +58,10 @@ class ConfigurationManager_Interview{
     //volatile - provide visibility - If Thread-1 updates instance, Thread-2 immediately sees the latest value.
 
     private ConfigurationManager_Interview(){
+    //the private constructor is actually the heart of the Singleton pattern.
+    //with public Now anyone can create multiple object
+    //Nobody outside the class can create an object
+        // Only the class itself can create the object.
 
     }
    //Double checked Locking - Double checked Locking is useful because if the object is already created then
